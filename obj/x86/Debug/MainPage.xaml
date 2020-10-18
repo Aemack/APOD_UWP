@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="APOD_UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:APOD_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <CalendarDatePicker x:ConnectionId='2' x:Name="MonthCalendar" Margin="48,57,0,0" VerticalAlignment="Top" Height="32" Width="172"                                        />
+        <Button x:ConnectionId='3' x:Name="LaunchButton" Content="Go to APOD launch date" Margin="48,94,0,0" VerticalAlignment="Top"                           />
+        <Border BorderThickness="1" BorderBrush="White" Margin="48,158,1177,739">
+        </Border>
+        <CheckBox x:ConnectionId='4' x:Name="ShowTodaysImageCheckBox" Content="Show today's image on start up" Margin="59,158,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:ConnectionId='5' x:Name="LimitRangeCheckBox" Content="Limit range to current year" Margin="59,190,0,0" VerticalAlignment="Top"                                                                              />
+        <TextBlock HorizontalAlignment="Left" Margin="59,236,0,0" Text="Images Downloaded Today:" TextWrapping="Wrap" VerticalAlignment="Top" Height="32"/>
+        <TextBox x:ConnectionId='6' x:Name="ImagesTodayTextBox" HorizontalAlignment="Left" Margin="234,229,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" IsReadOnly="True" Background="Gray"/>
+        <TextBlock HorizontalAlignment="Left" Margin="59,281,0,0" Text="Image Credit and Copyright:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:ConnectionId='7' x:Name="ImageCopyrightTextBox" HorizontalAlignment="Left" Margin="59,305,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Background="Gray" IsReadOnly="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="59,342,0,0" Text="Description" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:ConnectionId='8' x:Name="DescriptionTextBox" HorizontalAlignment="Left" Margin="59,366,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="134" Width="691" Background="Gray" IsReadOnly="True"/>
+        <Image x:ConnectionId='9' x:Name="ImagePictureBox" HorizontalAlignment="Left" Height="280" Margin="335,57,0,0" VerticalAlignment="Top" Width="415" FocusVisualSecondaryBrush="White"/>
+
+    </Grid>
+</Page>
+
